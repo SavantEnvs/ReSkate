@@ -1,0 +1,6 @@
+project: savantenvs/ReSkate
+target: shader-lookup
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_shader_lookup
+    libfuzzer: true
+    timeout: 10

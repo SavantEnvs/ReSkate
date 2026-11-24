@@ -1,0 +1,6 @@
+project: savantenvs/ReSkate
+target: mp-delta
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_mp_delta
+    libfuzzer: true
+    timeout: 10

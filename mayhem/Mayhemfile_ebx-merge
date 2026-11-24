@@ -1,0 +1,9 @@
+project: savantenvs/ReSkate
+target: ebx-merge
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ebx-merge/testsuite
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_ebx_merge
+    libfuzzer: true
+    timeout: 10

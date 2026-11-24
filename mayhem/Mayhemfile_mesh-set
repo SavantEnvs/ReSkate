@@ -1,0 +1,6 @@
+project: savantenvs/ReSkate
+target: mesh-set
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_mesh_set
+    libfuzzer: true
+    timeout: 10

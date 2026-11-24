@@ -1,0 +1,9 @@
+project: savantenvs/ReSkate
+target: mp-protocol
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/mp-protocol/testsuite
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_mp_protocol
+    libfuzzer: true
+    timeout: 10

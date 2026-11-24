@@ -1,0 +1,6 @@
+project: savantenvs/ReSkate
+target: bundle-ref
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_bundle_ref
+    libfuzzer: true
+    timeout: 10

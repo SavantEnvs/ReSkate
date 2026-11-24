@@ -1,0 +1,9 @@
+project: savantenvs/ReSkate
+target: remote-json
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/remote-json/testsuite
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_remote_json
+    libfuzzer: true
+    timeout: 10

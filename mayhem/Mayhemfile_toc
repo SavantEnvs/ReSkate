@@ -1,0 +1,9 @@
+project: savantenvs/ReSkate
+target: toc
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/toc/testsuite
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_toc
+    libfuzzer: true
+    timeout: 10

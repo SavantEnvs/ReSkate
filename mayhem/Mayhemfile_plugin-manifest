@@ -1,0 +1,9 @@
+project: savantenvs/ReSkate
+target: plugin-manifest
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/plugin-manifest/testsuite
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_plugin_manifest
+    libfuzzer: true
+    timeout: 10

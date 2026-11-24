@@ -1,0 +1,9 @@
+project: savantenvs/ReSkate
+target: native-db
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/native-db/testsuite
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_native_db
+    libfuzzer: true
+    timeout: 10

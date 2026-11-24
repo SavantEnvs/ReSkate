@@ -1,0 +1,6 @@
+project: savantenvs/ReSkate
+target: throwdown-wire
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_throwdown_wire
+    libfuzzer: true
+    timeout: 10

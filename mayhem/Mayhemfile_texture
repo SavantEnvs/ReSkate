@@ -1,0 +1,6 @@
+project: savantenvs/ReSkate
+target: texture
+cmds:
+  - cmd: /mayhem/build/mayhem/bin/fuzz_texture
+    libfuzzer: true
+    timeout: 10
